@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+$primary_background: #ffffff;
+$secondary_color: #000000;
+$button_background:#000000;
+
+$main_background: linear-gradient(105deg, $button_background 45%, $primary_background 45%, $primary_background 100%);
+
+$mobile_background:linear-gradient(0deg, #000000 45%, #000000 45%, #000000 100%);
+
+$input_border_color: #DCDFF1;
+$placeholder_color: #5D698D;
+
+$box_shadow_one: 0px 8px 15px rgba(0, 0, 0, 0.1);
+$box_shadow_two: 0px 10px 20px rgba(0, 0, 0, 0.315);
+
+@mixin displayCenter {
+  display: grid;
+  place-items: center;
+}
+
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+
+body {
+  height: 100vh; 
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  @include displayCenter();
+  background: $main_background;
+}
+
+h1 {
+  font-size: 20px;
+  font-weight: bold;
+
+}
+
+p{
+  font-size: 14px;
+  margin: 20px 0;
+}
+
+
+form {
+  label {
+    font-size: 14px;
+    font-weight: 600;
+    text-transform: capitalize;
+  }
+  input {
+    padding: 15px 20;
+    border-radius: 3px;
+    border: 2px solid
+    $input_border-color;
+    width: 100%;
+    margin: 5px 0;
+
+    &::placeholder {
+      font-size: 16px;
+      color: $placeholder_color;
+    }
+  }
+}
+
+
+

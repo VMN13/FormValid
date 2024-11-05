@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="stylesheet" href="./styles.css">
+<title>Form
+
+</title>
+<script defer src="entry.ea48f413d7b337d04bf3.js"></script></head>
+<body>
+  <section id="section">
+    <h1 id="auth">
+      Поле авторизации
+    </h1>
+  <form
+    id="myForm"
+    action="/api/registration"
+    method="POST"
+    class="form-example"
+    name="username"
+    autocomplete="off"
+    >
+    <p class="success register-success">
+    </p>
+<div
+ class="form-example"
+ name="username">
+  <label>
+    Имя:
+  </label>
+  <input 
+    type="text"
+    name="username"
+    id="name"
+    placeholder="Не должно превышать 15 символов"
+    maxlength="15"
+    required 
+    spellcheck="true"
+    />
+  </div>
+  <div 
+    class="form-example">
+  <label 
+    for="email">
+      E-mail:
+   </label>
+
+    <input
+      type="email"
+      name="useremail"
+      id="email" 
+      placeholder="Должен содержать символ @"
+      required>
+      <p class="error-email-error">
+      </p>
+    </div>
+
+    <label for="story">
+      Телефон:
+    </label>
+
+    <input
+     id="myInput"
+     placeholder="Телефон"
+     name="phone"
+     required />
+   
+    <input
+     id="text" 
+     placeholder="О себе"
+     name="textarea"
+     required />
+
+    <div class="form-example">
+      <input
+        id="input"
+        name="post"
+        type="submit"
+        value="Войти" 
+        
+        />
+    </div>
+    <p id="my-form-status">
+    </p>
+  </form>
+</section>
+
+<section class="section">
+  <h1 class="section__title">
+    Модальное окно
+  </h1>
+  <button class="section__button section__button1">
+    Открыть
+  </button>
+</section>
+
+<div class="modal modal1">
+  <div class="modal__main">
+    <h1>
+      Модальное окно
+    </h1>
+    <div class="modal__container">
+    </div>
+    <button id="butt">
+      Кнопка
+    </button>
+    <button class="modal__close">
+      &#10006;
+    </button>
+  </div>
+</div>
+</div>
+
+  <script src="https://unpkg.com/imask">
+  </script>
+  <script src="front.c0a1c51d83173698fb50.js"></script>
+</body>
+</html>

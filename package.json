@@ -1,0 +1,43 @@
+{
+  "dependencies": {
+    "-": "^0.0.1",
+    "ajax": "^0.0.4",
+    "async_hooks": "^1.0.0",
+    "axios": "^1.7.7",
+    "cors": "^2.8.5",
+    "dev-server": "^0.2.0",
+    "express": "^4.21.1",
+    "gulp": "^5.0.0",
+    "gulp-less": "^5.0.0",
+    "gulp-sass": "^5.1.0",
+    "imask": "^7.6.1",
+    "mixins": "^0.0.1",
+    "multer": "^1.4.5-lts.1",
+    "net": "^1.0.2",
+    "node-polyfill-webpack-plugin": "^4.0.0",
+    "nodemon": "^3.1.7",
+    "qs": "^6.13.0",
+    "sass": "^1.80.4",
+    "tailwindcss": "^3.4.14",
+    "webpack-dev-server": "^5.1.0",
+    "webpack-node-externals": "^3.0.0"
+  },
+  "name": "form",
+  "version": "1.0.0",
+  "main": "script.js",
+  "scripts": {
+    "build:dev": "webpack --env mode=development",
+    "build:prod": "webpack --env mode=production"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "babel-jest": "^29.7.0",
+    "css-loader": "^7.1.2",
+    "html-webpack-plugin": "^5.6.3",
+    "style-loader": "^4.0.0",
+    "webpack": "^5.95.0",
+    "webpack-cli": "^5.1.4"
+  }
+}

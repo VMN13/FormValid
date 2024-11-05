@@ -1,0 +1,155 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", serif;
+  font-weight: 500;
+  font-style: normal;
+  overflow: hidden;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+}
+
+h1 {
+  font-family: "Roboto", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 20px;
+  font-weight: bold;
+  text-align: center;
+}
+
+p {
+  font-family: "Roboto", serif;
+  font-weight: 500;
+  font-style: normal;
+  font-size: 14px;
+  margin: 20px 0;
+}
+
+form label {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+form input {
+  padding: 5%;
+  border-radius: 20px;
+  border: 2px solid rgb(183, 219, 241);
+  width: 100%;
+  margin: 5px 0;
+}
+form input::-moz-placeholder {
+  font-size: 16px;
+  color: #5D698D;
+}
+form input::placeholder {
+  font-size: 16px;
+  color: #5D698D;
+}
+
+input:focus {
+  background-color: rgb(235, 237, 236);
+}
+
+input:focus {
+  outline: rgb(235, 237, 236);
+}
+
+input:hover {
+  background-color: rgb(235, 237, 236);
+  transition: 0.2s;
+}
+
+#section {
+  border: solid;
+  border-color: rgb(183, 219, 241);
+  padding: 2%;
+  border-radius: 5%;
+}
+
+.modal {
+  overflow: hidden;
+  height: 100vh;
+  overflow-y: hidden;
+  position: fixed;
+  inset: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+  padding: 30px;
+  overflow-y: auto;
+  display: none;
+}
+
+.modal__main {
+  overflow: auto;
+  overflow-y: hidden;
+  position: relative;
+  max-width: 700px;
+  background-color: #fff;
+  margin: auto;
+  color: #000;
+  border-radius: 16px;
+  padding: 30px 60px 60px;
+  cursor: default;
+}
+
+.modal__title {
+  font-size: 60px;
+  margin-bottom: 30px;
+}
+
+.modal__container {
+  font-size: 30px;
+  margin-bottom: 30px;
+}
+
+.modal__btn {
+  background-color: red;
+  color: #fff;
+  font-size: 26px;
+  text-align: center;
+  display: block;
+  margin: 0 auto;
+  border-radius: 20px;
+  border: none;
+  padding: 15px 30px;
+}
+
+.modal__close {
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  font-size: 22px;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  outline: 1px solid transparent;
+  outline-offset: 3px;
+  transition: outline-color 0.15s ease-in-out;
+  border-radius: 3px;
+  padding: 0;
+  text-align: center;
+  display: block;
+  width: 30px;
+  height: 30px;
+}
+
+button {
+  font-family: "Roboto", serif;
+  font-weight: 500;
+  font-style: normal;
+  height: 50px;
+  width: 100px;
+  border-radius: 20px;
+  color: #5D698D;
+}
+
+#auth {
+  color: #5D698D;
+}/*# sourceMappingURL=styles.css.map */
